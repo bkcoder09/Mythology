@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title> Argonauts </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <h2> Mythology
+                <button type="button" class="btn b1" onclick="home()"> Home </button> 
+                <button type="button" class="btn b2" onclick="gods()"> Gods </button>
+                <button type="button" class="btn b3" onclick="goddesses()"> Goddesses </button>
+                <button type="button" class="btn b4" onclick="war()"> Trojan War </button>
+                <button type="button" class="btn b5" onclick="hades()"> Hades and Persephone </button>
+                <button type="button" class="btn b6" onclick="hades()"> Calypso </button>
+                <button type="button" class="btn b7" onclick="fates()"> Fates </button>
+                <button type="button" class="btn b8" onclick="furies()"> Furies </button>
+            </h2>
+            <br>
+            <label id="lbl"> Jason and the Argonauts </label>
+            <br>
+            <label id="ten"> The Golden Fleece </label>
+            <br>
+            <label class="butterdog"> The Argonauts were a group of 50 people trying to
+            steal the Golden Fleece which can heal anything. The Golden Fleece was in
+            Colchis. Inside the palace which was home to King Atees. Medea is the King's
+            daughter. By mistake, she got into the Argonauts boat nistead of her's. Medea
+            fell in love with the captain of the Argonauts, Jason. Because Medea loved
+            Jason, she would help them steal the Golden Fleece if Jason married her.
+            Jason agreed to these terms. The fleece was in a garden protected by fiery
+            bulls. Medea gave Jason a lotion that would protect him from the bulls.
+            Jason put on the lotion, got past the bulls, stole the fleece, and got out of
+            there. Medea's brother, Absyrtus came after them but Jason cut him into pieces.
+            Jason married Medea since she helped him but Jason never actually loved Medea
+            so he left her and ran off with Glauce. Glauce was the daughter of King Creon
+            of Corinth. Driven by rage and jealousy, she killed Glauce and her sons. Medea
+            married another man named Aegeus but then tried to poison his son, Theseus.
+        </label>
+        </center>
+        <script src="argo.js"> </script>
+    </body>
+</html>
+<style>
+    body{
+        color:white;
+        background-color: rgb(91, 141, 82);
+    }
+    h2{
+        background-color:grey;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:0;
+        border-radius:20px;
+        width:100%;
+        font-family: 'Dancing Script', cursive;
+    }
+    .btn{
+        background-color:grey;
+        font-size:15px;
+        color:white;
+        border-style:solid;
+        border-width:1px;
+        border-color:white;
+    }
+    .b1{
+        margin-left:400px;
+    }
+    #lbl{
+        font-size:40px;
+        font-family: 'Dancing Script', cursive;
+    }
+    #ten{
+        font-size:28px;
+        font-family:'Dancing Script', cursive;
+    }
+    .butterdog{
+        font-size:28px;
+        font-family:'Indie Flower', cursive;
+    }
+    img{
+        border-radius:20px;
+    }
+</style>

@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title> Calypso </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <h2> Mythology
+                <button type="button" class="btn b1" onclick="home()"> Home </button> 
+                <button type="button" class="btn b2" onclick="gods()"> Gods </button>
+                <button type="button" class="btn b3" onclick="goddesses()"> Goddesses </button>
+                <button type="button" class="btn b4" onclick="war()"> Trojan War </button>
+                <button type="button" class="btn b5" onclick="jason()"> Argonauts </button>
+                <button type="button" class="btn b6" onclick="hades()"> Hades and Persephone </button>
+                <button type="button" class="btn b7" onclick="fates()"> Fates </button>
+                <button type="button" class="btn b8" onclick="furies()"> Furies </button>
+            </h2>
+            <br>
+            <label id="lbl"> Calypso </label>
+            <br>
+            <label id="ten"> Trapped on Ogygyia </label>
+            <br>
+            <img src="Calypso.png" class="calypso">
+            <br>
+            <label class="butterdog"> There was a big war between the gods and the titans. Calypso was a child of a titan. She was the daughter of
+            Atlas. She had supported the titans in the titan war because they were her family. The titans lost the war and Zeus cut up Kronos and
+            threw him into Tartarus. Tartarus is a giant god home to all the monsters like minotaurs, manticores, chimeras, empousai, and arai.
+            The gods didn't forgive Calypso for supporting the titans. Instead, they trapped her on an island called Ogygia. You can't go to Ogygyia
+            unless the fates send you there. The fates always sent men to Ogygyia. Men Calypso couldn't help but fall inlove with. Calypso would ask
+            them to stay with her forever which would make them immortal like her. The fates only sent men they knew couldn't stay with Calypso and
+            would have to leave. They did this to torture Calypso even more. They never sent the same man twice which ment Calypso would never see
+            them again. </label>
+        </center>
+        <script src="calypso.js"> </script>
+    </body>
+</html>
+<style>
+    body{
+        color:white;
+        background-color: rgb(82, 124, 141);
+    }
+    h2{
+        background-color:grey;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:0;
+        border-radius:20px;
+        width:100%;
+        font-family: 'Dancing Script', cursive;
+    }
+    .btn{
+        background-color:grey;
+        font-size:15px;
+        color:white;
+        border-style:solid;
+        border-width:1px;
+        border-color:white;
+    }
+    .b1{
+        margin-left:350px;
+    }
+    #lbl{
+        font-size:40px;
+        font-family: 'Dancing Script', cursive;
+    }
+    #ten{
+        font-size:28px;
+        font-family:'Dancing Script', cursive;
+    }
+    .butterdog{
+        font-size:28px;
+        font-family:'Indie Flower', cursive;
+    }
+    img{
+        border-radius:20px;
+    }
+    .calypso{
+        width:300px;
+    }
+</style>

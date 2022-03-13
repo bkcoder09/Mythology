@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title> Fates </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <h2> Mythology
+                <button type="button" class="btn b1" onclick="home()"> Home </button> 
+                <button type="button" class="btn b2" onclick="gods()"> Gods </button>
+                <button type="button" class="btn b3" onclick="goddesses()"> Goddesses </button>
+                <button type="button" class="btn b4" onclick="war()"> Trojan War </button>
+                <button type="button" class="btn b5" onclick="jason()"> Argonauts </button>
+                <button type="button" class="btn b6" onclick="hades()"> Hades and Persephone </button>
+                <button type="button" class="btn b7" onclick="calypso()"> Calypso </button>
+                <button type="button" class="btn b8" onclick="furies()"> Furies </button>
+            </h2>
+            <br>
+            <label id="lbl"> The Fates </label>
+            <br>
+            <label id="ten"> Death Deciders </label>
+            <br>
+            <img src="Fates.jpg" class="fates">
+            <br>
+            <label class="butterdog"> The Fates are daughters of Nyx. they decide when you
+            die by cutting string. There are three Fates. Clotho, Atropos, and Lachesis.
+            They are all sisters. </label>
+            <br>
+            <hr>
+            <br>
+            <img src="Clotho.jpg" class="c">
+            <br>
+            <label class="butterdog"> Clotho spun the thread of human fate. </label>
+            <br>
+            <hr>
+            <br>
+            <img src="Lachesis.jpeg" class="l">
+            <br>
+            <label class="butterdog"> Lachesis took the thread and gave it to Atropos </label>
+            <br>
+            <hr>
+            <br>
+            <img src="Atropos.jpg">
+            <br>
+            <label class="butterdog"> Atropos cut the thread determining the exact death
+            date </label> 
+            <br>
+            <br>
+        </center>
+        <script src="fates.js"> </script>
+    </body>
+</html>
+<style>
+    body{
+        color:white;
+        background-color: rgb(98, 0, 85);
+    }
+    h2{
+        background-color:grey;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:0;
+        border-radius:20px;
+        width:100%;
+        font-family: 'Dancing Script', cursive;
+    }
+    .btn{
+        background-color:grey;
+        font-size:15px;
+        color:white;
+        border-style:solid;
+        border-width:1px;
+        border-color:white;
+    }
+    .b1{
+        margin-left:350px;
+    }
+    #lbl{
+        font-size:40px;
+        font-family: 'Dancing Script', cursive;
+    }
+    #ten{
+        font-size:28px;
+        font-family:'Dancing Script', cursive;
+    }
+    .butterdog{
+        font-size:28px;
+        font-family:'Indie Flower', cursive;
+    }
+    img{
+        border-radius:20px;
+    }
+    .fates{
+        width:300px;
+    }
+    .c{
+        width:300px;
+    }
+    .l{
+        width:300px;
+    }
+</style>

@@ -1,0 +1,465 @@
+<html>
+    <head>
+        <title> Goddesses </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <h2> Mythology
+                <button type="button" class="btn b1" onclick="home()"> Home </button> 
+                <button type="button" class="btn b2" onclick="gods()"> Gods </button>
+                <button type="button" class="btn b3" onclick="war()"> Trojan War </button>
+                <button type="button" class="btn b4" onclick="jason()"> Argonauts </button>
+                <button type="button" class="btn b5" onclick="hades()"> Hades and Persephone </button>
+                <button type="button" class="btn b6" onclick="calypso()"> Calypso </button>
+                <button type="button" class="btn b7" onclick="fates()"> Fates </button>
+                <button type="button" class="btn b8" onclick="furies()"> Furies </button>
+            </h2>
+            <br>
+            <img class="artemis" src="Artemis.jpg">
+            <br>
+            <label class="boom"> Artemis is the goddess of archery, the moon, the hunt, wild
+            animals, and vegitation. She is the daughter of Zeus and Leto. Her symbols are
+            a bow and arrow, a quiver, hunting knives, and a deer. </label>
+            <br>
+            <br>
+            <br>
+            <img class="aphro" src="Aphrodite.jpg">
+            <br>
+            <label class="boom"> Aphrodite is the goddess of love, beauty, and lust.
+            She came from Uranus's genitls. Her symbols are roses, doves, and swans. </label>
+            <br>
+            <br>
+            <br>
+            <img class="athena" src="Athena.jpg">
+            <br>
+            <label class="boom"> Athena is the goddess of wisdom, knowledge, crafts, and
+            civilization. She is the daughter of Zeus and Hera. Her symbols are an owl and
+            an olive tree. </label>
+            <br>
+            <br>
+            <br>
+            <img class="demeter" src="Demeter.jpg">
+            <br>
+            <label class="boom"> Demeter is the goddess of agriculture and fertility. She is
+            the daughter of Uranus and Gaea. Her symbols are wheat, bread, and a cornucopia.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="hera" src="Hera.png">
+            <br>
+            <label class="boom"> Hera is the goddess of woman, marriage, and child-birth.
+            She is the daughter of Uranus and Zeus. Her symbols are a diadem, a lotus,
+            a scepter, and a throne. </label>
+            <br>
+            <br>
+            <br>
+            <img class="eris" src="Eris.jpg">
+            <br>
+            <label class="boom"> Eris is the goddess of anger and strife.She is the
+            daughter of Nyx and Hera. Her symbol is the Apple of Discord. </label>
+            <br>
+            <br>
+            <br>
+            <img class="eos" src="Eos.jpg">
+            <br>
+            <label class="boom"> Eos is the goddess of Dawn. She is the daughter of
+            Hyperion and Theia. Her symbol is a rose. </label>
+            <br>
+            <br>
+            <br>
+            <img class="hecate" src="Hecate.jpg">
+            <br>
+            <label class="boom"> Hecate is the goddess of magic. She is the daughter of
+            Perses and Asteria. Her symbols are paired torches, dogs, serpents, and daggers.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="iris" src="Iris.jpg">
+            <br>
+            <label class="boom"> Iris is the goddess of rainbows. She is the daughter of
+            Thaumas and Electra. Her symbol is a rainbow. </label>
+            <br>
+            <br>
+            <br>
+            <img class="hebe" src="Hebe.png">
+            <br>
+            <label class="boom"> Hebe is the goddess of youth. She is the daughter of Zeus
+            and Hera. Her symbols are ivy and wings. </label>
+            <br>
+            <br>
+            <br>
+            <img class="nemesis" src="Nemesis.jpg">
+            <br>
+            <label class="boom"> Nemesis is the goddess of vengeance and balance. She is the
+            daughter of Nyx. Her symbols are a dagger and a birdle.</label>
+            <br>
+            <br>
+            <br>
+            <img class="nike" src="Nike.jpg">
+            <br>
+            <label class="boom"> Nike is the goddess of victory and strength. She is the
+            daughter of Pallas and river Styx. Her symbols are wings and golden sandals.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="hestia" src="Hestia.jpg">
+            <br>
+            <label class="boom"> Hestia is the goddess of hearth and peace. She is the
+            daughter of Uranus and Gaea. Her symbol is hearth. </label>
+            <br>
+            <br>
+            <br>
+            <img class="persephone" src="Persephone.jpg">
+            <br>
+            <label class="boom"> Persephone is the goddess of the seasons. She is the
+            daughter of Zeus and Demeter. Her symbols are a pomegranate, a flower, and a deer.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="tyche" src="Tyche.jpg">
+            <br>
+            <label class="boom"> Tyche is the goddess of luck and fortune. She is the
+            daughter of Zeus and Aphrodite. Her symbol is a cornucopia </label>
+            <br>
+            <br>
+            <br>
+            <img class="nyx" src="Nyx.jpg">
+            <br>
+            <label class="boom"> Nyx is the goddess of night. She is the
+            daughter of Chaos. Her symbol is the moon. </label>
+            <br>
+            <br>
+            <br>
+            <img class="pheme" src="Pheme.jpg">
+            <br>
+            <label class="boom"> Pheme is the goddess of gossip and rumors. She is the
+            daughter of Gaea. Her symbol is a scroll. </label>
+            <br>
+            <br>
+            <br>
+            <img class="diana" src="Diana.jpg">
+            <br>
+            <label class="boom"> Diana is the goddess of archery, the moon, the hunt, wild
+            animals, and vegitation. She is the daughter of Jupiter and Latona. Her symbols
+            are a bow and arrow, a quiver, hunting knives, and a deer. </label>
+            <br>
+            <br>
+            <br>
+            <img class="venus" src="Venus.jpg">
+            <br>
+            <label class="boom"> Venus is the goddess of love, beauty, and lust.
+            She came from Caedus's genitls. Her symbols are roses, doves, and swans. </label>
+            <br>
+            <br>
+            <br>
+            <img class="minerva" src="Bellona.jpg">
+            <br>
+            <label class="boom"> Bellona is the goddess of wisdom and knowledge. She is the
+            daughter of Jupiter and Juno. Her symbols are an owl and an olive tree. </label>
+            <br>
+            <br>
+            <br>
+            <img class="ceres" src="Ceres.jpg">
+            <br>
+            <label class="boom"> Ceres is the goddess of agriculture and fertility. She is
+            the daughter of Caedus and Terra. Her symbols are wheat, bread, and a cornucopia.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="juno" src="Juno.png">
+            <br>
+            <label class="boom"> Juno is the goddess of woman, marriage, and child-birth.
+            She is the daughter of Caedus and Terra. Her symbols are a diadem, a lotus,
+            a scepter, and a throne. </label>
+            <br>
+            <br>
+            <br>
+            <img class="discord" src="Discordia.jpg">
+            <br>
+            <label class="boom"> Discordia is the goddess of anger and strife. She is the
+            daughter of Nox and Juno. Her symbol is the Apple of Discord. </label>
+            <br>
+            <br>
+            <br>
+            <img class="aurora" src="Aurora.jpg">
+            <br>
+            <label class="boom"> Aurora is the goddess of Dawn. She is the daughter of
+            Sun and Dione. Her symbol is a rose. </label>
+            <br>
+            <br>
+            <br>
+            <img class="hekate" src="Hekate.jpg">
+            <br>
+            <label class="boom"> Hekate is the goddess of magic. She is the daughter of
+            Perses and Delos. Her symbols are paired torches, dogs, serpents, and daggers.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="arcus" src="Arcus.png">
+            <br>
+            <label class="boom"> Arcus is the goddess of rainbows. She is the daughter of
+            Thaumas and Electra. Her symbol is a rainbow. </label>
+            <br>
+            <br>
+            <br>
+            <img class="juventus" src="Juventus.png">
+            <br>
+            <label class="boom"> Juventus is the goddess of youth. She is the daughter of
+            Jupiter and Juno. Her symbols are ivy and wings. </label>
+            <br>
+            <br>
+            <br>
+            <img class="invidia" src="Invidia.jpg">
+            <br>
+            <label class="boom"> Invidia is the goddess of vengeance and balance. She is the
+            daughter of Nox. Her symbols are a dagger and a birdle.</label>
+            <br>
+            <br>
+            <br>
+            <img class="victoria" src="Victoria.jpg">
+            <br>
+            <label class="boom"> Victoria is the goddess of victory and strength. She is the
+            daughter of Pallas and river Styx. Her symbols are wings and golden sandals.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="vesta" src="Vesta.gif">
+            <br>
+            <label class="boom"> Vesta is the goddess of hearth and peace. She is the
+            daughter of Caedus and Terra. Her symbol is hearth. </label>
+            <br>
+            <br>
+            <br>
+            <img class="proserpina" src="Proserpina.jpg">
+            <br>
+            <label class="boom"> Proserpina is the goddess of the seasons. She is the
+            daughter of Jupiter and Ceres. Her symbols are a pomegranate, a flower, and a
+            deer. </label>
+            <br>
+            <br>
+            <br>
+            <img class="fortuna" src="Fortuna.png">
+            <br>
+            <label class="boom"> Fortuna is the goddess of luck and fortune. She is the
+            daughter of Jupiter and Venus. Her symbol is a cornucopia </label>
+            <br>
+            <br>
+            <br>
+            <img class="nox" src="Nyx.jpg">
+            <br>
+            <label class="boom"> Nox is the goddess of night. She is the
+            daughter of Chaos. Her symbol is the moon. </label>
+            <br>
+            <br>
+            <br>
+            <img class="fama" src="Fama.jpg">
+            <br>
+            <label class="boom"> Fama is the goddess of gossip and rumors. She is the
+            daughter of Terra. Her symbol is a scroll. </label>
+        </center>
+        <script src="goddess.js"> </script>
+    </body>
+</html>
+<style>
+    body{
+        color:white;
+        background-color: rgb(204, 146, 199);
+    }
+    h2{
+        background-color:grey;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:0;
+        border-radius:20px;
+        width:100%;
+        font-family: 'Dancing Script', cursive;
+    }
+    .btn{
+        background-color:grey;
+        font-size:15px;
+        color:white;
+        border-style:solid;
+        border-width:1px;
+        border-color:white;
+    }
+    .b1{
+        margin-left:400px;
+    }
+    img{
+        border-radius:20px;
+    }
+    .apollo{
+        width:200px;
+    }
+    .ares{
+        width:300px;
+    }
+    .hermes{
+        width:300px;
+    }
+    .hades{
+        width:300px;
+    }
+    .festus{
+        width:400px;
+    }
+    .poseidon{
+        width:350px;
+    }
+    .zeus{
+        width:350px;
+    }
+    .pluto{
+        width:400px;
+    }
+    .neptune{
+        width:500px;
+    }
+    .jupiter{
+        width:500px;
+    }
+    .mercury{
+        width:300px;
+    }
+    .bacchus{
+        width:350px;
+    }
+    .mars{
+        width:450px;
+    }
+    .ian{
+        width:300px;
+    }
+    .dion{
+        width:300px;
+    }
+    .janus{
+        width:300px;
+    }
+    .boreas{
+        width:250px;
+    }
+    .boom{
+        color:rgb(75, 74, 74);
+        font-size:30px;
+        font-family: 'Indie Flower', cursive;
+    }
+    .artemis{
+        width:300px;
+    }
+    .demeter{
+        width:300px;
+    }
+    .hera{
+        width:250px;
+    }
+    .eris{
+        width:250px;
+    }
+    .eos{
+        width:300px;
+    }
+    .hestia{
+        width:350px;
+    }
+    .persephone{
+        width:300px;
+    }
+    .diana{
+        width:250px;
+    }
+    .discord{
+        width:300px;
+    }
+    .aurora{
+        width:300px;
+    }
+    .hekate{
+        width:300px;
+    }
+    .aphro{
+        width:300px;
+    }
+    .athena{
+        width:325px;
+    }
+    .hecate{
+        width:350px;
+    }
+    .iris{
+        width:300px;
+    }
+    .hebe{
+        width:300px;
+    }
+    .nemesis{
+        width:325px;
+    }
+    .nike{
+        width:350px;
+    }
+    .tyche{
+        width:350px;
+    }
+    .nyx, .nox{
+        width:350px;
+    }
+    .diana{
+        width:325px;
+    }
+    .venus{
+        width:325px;
+    }
+    .minerva{
+        width:400px;
+    }
+    .ceres{
+        width:350px;
+    }
+    .juno{
+        width:350px;
+    }
+    .aurora{
+        width:350px;
+    }
+    .invidia{
+        width:300px;
+    }
+    .victoria{
+        width:350px;
+    }
+    .vesta{
+        width:350px;
+    }
+    .proserpina{
+        width:350px;
+    }
+    .arcus{
+        width:250px;
+    }
+    .pheme{
+        width:300px;
+    }
+</style>

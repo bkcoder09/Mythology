@@ -1,0 +1,274 @@
+<html>
+    <head>
+        <title> Gods </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      
+      <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js"></script>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <center>
+            <h2> Mythology
+                <button type="button" class="btn b1" onclick="home()"> Home </button> 
+                <button type="button" class="btn b2" onclick="goddesses()"> Goddesses </button>
+                <button type="button" class="btn b3" onclick="war()"> Trojan War </button>
+                <button type="button" class="btn b4" onclick="jason()"> Argonauts </button>
+                <button type="button" class="btn b5" onclick="hades()"> Hades and Persephone </button>
+                <button type="button" class="btn b6" onclick="calypso()"> Calypso </button>
+                <button type="button" class="btn b7" onclick="fates()"> Fates </button>
+                <button type="button" class="btn b8" onclick="furies()"> Furies </button>
+            </h2>
+            <br>
+            <img class="apollo" src="Apollo.webp">
+            <br>
+            <label class="boom"> Apollo is the god of archery, sun, healing, prophecies,
+            poetry, dancing, truth, knowledge, and music. He is the son of Zeus and Leto.
+            His symbols are bow and rrows, a lyre, a raven, rays of light radiating from his
+            head, the branch of laurel, and a wreath.</label>
+            <br>
+            <br>
+            <br>
+            <img class="ares" src="Ares.jpg">
+            <br>
+            <label class="boom"> Ares is the god of war and courage. He is the son of Zeus
+            and Hera. His symbols are a sword, a spear, a shield, and a helmet. </label>
+            <br>
+            <br>
+            <br>
+            <img class="boreas" src="Boreas.png">
+            <br>
+            <label class="boom"> Boreas is the god of the north wind. He
+            is the son of Astraeus and Eos. His symbol is two faces.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="dion" src="Dionysus.jpg">
+            <br>
+            <label class="boom"> Dionysus is the god of wine, ectasy, and pleasure. He is
+            the son of Zeus and Semele. His symbols are a grapevine, some ivy, and a chalice.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="hermes" src="Hermes.jpg">
+            <br>
+            <label class="boom"> Hermes is the god of trade, thieves, travelers, sports,
+            athletes, border crossings, and guide to the Underworld. He is the son of Zeus
+            and Maia. His symbols are a tortoise, a lyre, and a winged helmet. </label>
+            <br>
+            <br>
+            <br>
+            <img class="hades" src="Hades.jpg">
+            <br>
+            <label class="boom"> Hades is the god of wealth and the Underworld. He is the
+            son of Uranus and Gaea. His symbols are a narcissus flower, a serpent, and a
+            pomegranate. </label>
+            <br>
+            <br>
+            <br>
+            <img class="festus" src="Hephaestus.png">
+            <br>
+            <label class="boom"> Hephaestus is the god of fire, the forge, blacksmithing,
+            metalwworking, and masonry. He is the son of Zeus and Hera. His symbols are a
+            a blacksmith's hammer, an anvil, and a pair of tongs. </label>
+            <br>
+            <br>
+            <br>
+            <img class="janus" src="Janus.jpg">
+            <br>
+            <label class="boom"> Janus is the god of choices, endings, and doorways. He
+            is the son of Uranus and Gaea. His symbol is two faces.
+            </label>
+            <br>
+            <br>
+            <br>
+            <img class="poseidon" src="Poseidon.jpg">
+            <br>
+            <label class="boom"> Poseidon is the god of the seas, water, earthquaes, and
+            horses. He is the son of Uranus and Gaea. His symbol is a trident. </label>
+            <br>
+            <br>
+            <br>
+            <img class="zeus" src="Zeus.jpg">
+            <br>
+            <label class="boom"> Zeus is the god of the sky. He is the
+            son of Uranus and Gaea. His symbols are Thunderbolt and an eagle. </label>
+            <br>
+            <br>
+            <br>
+            <img class="phoebus" src="Phoebus.jpg">
+            <br>
+            <label class="boom"> Phoebus is the god of archery, sun, healing, prophecies,
+            poetry, dancing, truth, knowledge, and music. He is the son of Jupiter and
+            Latona. His symbols are bow and rrows, a lyre, a raven, rays of light radiating
+            from his head, the branch of laurel, and a wreath.</label>
+            <br>
+            <br>
+            <br>
+            <img class="mars" src="Mars.jpg">
+            <br>
+            <label class="boom"> Mars is the god of war and courage. He is the son of Jupiter
+            and Juno. His symbols are a sword, a spear, a shield, and a helmet. </label>
+            <br>
+            <br>
+            <br>
+            <img class="bacchus" src="Bacchus.jpg">
+            <br>
+            <label class="boom"> Bacchus is the god of wine, ectasy, and pleasure. He is
+            the son of Jupiter and Thyone. His symbols are a grapevine, some ivy, and a
+            chalice. </label>
+            <br>
+            <br>
+            <br>
+            <img class="mercury" src="Mercury.jpg">
+            <br>
+            <label class="boom"> Mercury is the god of trade, thieves, travelers, sports,
+            athletes, border crossings, and guide to the Underworld. He is the son of Jupiter
+            and May. His symbols are a tortoise, a lyre, and a winged helmet. </label>
+            <br>
+            <br>
+            <br>
+            <img class="pluto" src="Pluto.jpg">
+            <br>
+            <label class="boom"> Pluto is the god of wealth and the Underworld. He is the
+            son of Caelus and Terra. His symbols are a narcissus flower, a serpent, and a
+            pomegranate. </label>
+            <br>
+            <br>
+            <br>
+            <img class="vulcan" src="Vulcan.jpg">
+            <br>
+            <label class="boom"> Vulcan is the god of fire, the forge, blacksmithing,
+            metalwworking, and masonry. He is the son of Jupiter and Juno. His symbols are a
+            a blacksmith's hammer, an anvil, and a pair of tongs. </label>
+            <br>
+            <br>
+            <br>
+            <img class="neptune" src="Neptune.jpg">
+            <br>
+            <label class="boom"> Neptune is the god of the seas, water, earthquaes, and
+            horses. He is the son of Caedus and Terra. His symbol is a trident. </label>
+            <br>
+            <br>
+            <br>
+            <img class="jupiter" src="Jupiter.jpg">
+            <br>
+            <label class="boom"> Jupiter is the god of the sky. He is the
+            son of Caedus and Terra. His symbols are Thunderbolt and an eagle. </label>
+            <br>
+            <br>
+            <br>
+            <img class="aquilo" src="Aquilo.jpg">
+            <br>
+            <label class="boom"> Aquilo is the god of the north wind. He is the son of 
+            the son of Astraios and Aurora. His symbols are a grapevine, some ivy, and a
+            chalice. </label>
+            <br>
+            <br>
+            <br>
+            <img class="ian" src="Ianuarius.jpg">
+            <br>
+            <label class="boom"> Ianuarius is the god of choices, endings, and doorways. He
+            is the son of Caelus and Terra. His symbol is two faces.
+            </label>
+        </center>
+        <script src="god.js"> </script>
+    </body>
+</html>
+<style>
+    body{
+        color:white;
+        background-color: cadetblue;
+    }
+    h2{
+        background-color:grey;
+        padding-top:10px;
+        padding-bottom:10px;
+        margin-top:0;
+        border-radius:20px;
+        width:100%;
+        font-family: 'Dancing Script', cursive;
+    }
+    .btn{
+        background-color:grey;
+        font-size:15px;
+        color:white;
+        border-style:solid;
+        border-width:1px;
+        border-color:white;
+    }
+    .b1{
+        margin-left:325px;
+    }
+    img{
+        border-radius:20px;
+    }
+    .apollo{
+        width:200px;
+    }
+    .ares{
+        width:300px;
+    }
+    .hermes{
+        width:300px;
+    }
+    .hades{
+        width:300px;
+    }
+    .festus{
+        width:400px;
+    }
+    .poseidon{
+        width:350px;
+    }
+    .zeus{
+        width:350px;
+    }
+    .pluto{
+        width:400px;
+    }
+    .neptune{
+        width:500px;
+    }
+    .jupiter{
+        width:500px;
+    }
+    .mercury{
+        width:300px;
+    }
+    .bacchus{
+        width:350px;
+    }
+    .mars{
+        width:450px;
+    }
+    .ian{
+        width:300px;
+    }
+    .dion{
+        width:300px;
+    }
+    .janus{
+        width:300px;
+    }
+    .boreas{
+        width:250px;
+    }
+    .boom{
+        color:rgb(131, 129, 0);
+        font-size:30px;
+        font-family: 'Indie Flower', cursive;
+    }
+</style>
